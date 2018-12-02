@@ -17,17 +17,17 @@
 > 2. 安装MDSplus，推荐选择[stable版本](http://www.mdsplus.org/index.php/Latest_Windows_Distributions)，下载并安装。
 > 3. 安装相应的python依赖包，这里选择清华pypi镜像安装：
 ```
-  sudo pip install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
-  sudo pip install scipy -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
-  sudo pip install PyPDF2 -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
-  sudo pip install hgapi -i https://pypi.tuna.tsinghua.edu.cn/simple/
-  sudo pip install PyOpenGL -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
-  sudo pip install H5py -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
-  sudo pip install Pillow -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
-  sudo pip install mdsplus -i https://pypi.tuna.tsinghua.edu.cn/simple/
-  sudo pip install netCDF4 -i https://pypi.tuna.tsinghua.edu.cn/simple/
-  sudo pip install matplotlib -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
-  sudo pip install wxPython -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+  pip install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+  pip install scipy -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+  pip install PyPDF2 -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+  pip install hgapi -i https://pypi.tuna.tsinghua.edu.cn/simple/
+  pip install PyOpenGL -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+  pip install H5py -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+  pip install Pillow -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+  pip install mdsplus -i https://pypi.tuna.tsinghua.edu.cn/simple/
+  pip install netCDF4 -i https://pypi.tuna.tsinghua.edu.cn/simple/
+  pip install matplotlib -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+  pip install wxPython -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
 ```
 
 ### Ubuntu环境安装
