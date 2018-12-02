@@ -33,9 +33,10 @@
 ### Ubuntu环境安装
 
 > 1. 安装python
-
-```sudo apt-get install python2.7```
-> 2. 安装MDSplus，具体参看[安装教程](http://www.mdsplus.org/index.php/Latest_Ubuntu/Debian_Packages)。
+```
+  sudo apt-get install python2.7
+```
+> 2. 安装MDSplus，按照下面命令安装，具体参看[安装教程](http://www.mdsplus.org/index.php/Latest_Ubuntu/Debian_Packages)。
 ```
   **注意：**os-selection为ubuntu版本，如：**Ubuntu14**，flavor选择**stable**或者**alpha**
   deb http://www.mdsplus.org/dist/os-selection/repo MDSplus flavor
@@ -76,10 +77,11 @@
   sudo pip install mdsplus -i https://pypi.tuna.tsinghua.edu.cn/simple/
   sudo pip install netCDF4==1.4.0 -i https://pypi.tuna.tsinghua.edu.cn/simple/
   sudo pip install matplotlib==2.2.3 --ignore-installed six -i https://pypi.tuna.tsinghua.edu.cn/simple/ 
+  #**注意：**安装wxPython包时，pip镜像源没有Linux版本的,这里选择官方给的安装方法。
+  #安装wxPython时建议翻墙否则速度太慢。
+  #这里“ubuntu-16.04”改成相应的Ubuntu版本
+  pip install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-16.04 wxPython
 ```
-
-**注意：**安装wxPython包时，pip镜像源没有Linux版本的,这里选择官方给的安装方法，安装wxPython时建议翻墙否则速度太慢。
-```pip install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/Ubuntu版本（如：ubuntu-16.04） wxPython```
 
 ### 运行PIScope
 
@@ -100,20 +102,30 @@
   #在交互式窗口输入scope()命令
   >>scope()
 ```
+
 ![Scope窗口](https://github.com/shenzhengyang/PIScope/blob/master/img/1.png)
+
 > 2. 点击scope->global setting->config，打开MDSplus服务器配置选项卡
+
 ![config选项卡](https://github.com/shenzhengyang/PIScope/blob/master/img/2.png)
+
 > 3. 创建个新的连接服务器
+
 ![创建新服务器](https://github.com/shenzhengyang/PIScope/blob/master/img/3.png)
 
 ## PIScope简单可视化数据
 
 > 1. 在Scope窗口点击右键->Add MDS Session
+
 ![添加Session](https://github.com/shenzhengyang/PIScope/blob/master/img/9.png)
+
 > 2. 填写Tree、Node名称
+
 ![添加Tree](https://github.com/shenzhengyang/PIScope/blob/master/img/4.png)
 ![填写Node](https://github.com/shenzhengyang/PIScope/blob/master/img/5.png)
+
 > 3. 填写shot号
+
 ![填写shot](https://github.com/shenzhengyang/PIScope/blob/master/img/6.png)
 
 ## PIScope脚本式可视化数据
@@ -131,6 +143,7 @@
 >> v.addpage()                        #添加一个page
 >> plot(ipm_time,ipm)                 #绘制图形
 ```
+
 ![脚本](https://github.com/shenzhengyang/PIScope/blob/master/img/7.png)
 ![绘图](https://github.com/shenzhengyang/PIScope/blob/master/img/8.png)
 
