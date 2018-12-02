@@ -100,20 +100,21 @@
   #在交互式窗口输入scope()命令
   >>scope()
 ```
-[Scope窗口]()
+![Scope窗口](https://github.com/shenzhengyang/PIScope/blob/master/img/1.png)
 > 2. 点击scope->global setting->config，打开MDSplus服务器配置选项卡
-[config选项卡]()
+![config选项卡](https://github.com/shenzhengyang/PIScope/blob/master/img/2.png)
 > 3. 创建个新的连接服务器
-[创建新服务器]()
+![创建新服务器](https://github.com/shenzhengyang/PIScope/blob/master/img/3.png)
 
 ## PIScope简单可视化数据
 
 > 1. 在Scope窗口点击右键->Add MDS Session
-[添加Session]()
+![添加Session](https://github.com/shenzhengyang/PIScope/blob/master/img/9.png)
 > 2. 填写Tree、Node名称
-[填写Tree]()
+![添加Tree](https://github.com/shenzhengyang/PIScope/blob/master/img/4.png)
+![填写Node](https://github.com/shenzhengyang/PIScope/blob/master/img/5.png)
 > 3. 填写shot号
-[填写shot]()
+![填写shot](https://github.com/shenzhengyang/PIScope/blob/master/img/6.png)
 
 ## PIScope脚本式可视化数据
 
@@ -130,8 +131,8 @@
 >> v.addpage()                        #添加一个page
 >> plot(ipm_time,ipm)                 #绘制图形
 ```
-[脚本]()
-[绘图]()
+![脚本](https://github.com/shenzhengyang/PIScope/blob/master/img/7.png)
+![绘图](https://github.com/shenzhengyang/PIScope/blob/master/img/8.png)
 
 ## 总结
 
