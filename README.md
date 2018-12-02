@@ -92,5 +92,47 @@
   cd $PISCOPE_DIR
   python python/piscope.py
 ```
+
 ## PIScope连接MDSPlus
-1. 
+
+> 1. 创建一个Scope
+```
+  #在交互式窗口输入scope()命令
+  >>scope()
+```
+[Scope窗口]()
+> 2. 点击scope->global setting->config，打开MDSplus服务器配置选项卡
+[config选项卡]()
+> 3. 创建个新的连接服务器
+[创建新服务器]()
+
+## PIScope简单可视化数据
+
+> 1. 在Scope窗口点击右键->Add MDS Session
+[添加Session]()
+> 2. 填写Tree、Node名称
+[填写Tree]()
+> 3. 填写shot号
+[填写shot]()
+
+## PIScope脚本式可视化数据
+
+> 1. 在交互式终端编写脚本
+```
+>> from MDSplus import Connection     #导入连接MDSplus包
+>> c=Connection('202.127.204.12')     #连接MDSplus
+>> c.openTree('EAST',50000)           #打开Tree，'EAST'树名称，50000炮号
+>> ipm=c.get('\EAST::TOP.T1:IPM')     #获得一个Node
+>> ipm=ipm.data()                     #获取Node数据
+>> ipm_time=c.get('dim_of(\EAST::TOP.T1:IPM)') #获取时间序列
+>> from ifigure.interactive import *  #导入PIScope画图包
+>> v=figure(proj.book)                #创建一个figure
+>> v.addpage()                        #添加一个page
+>> plot(ipm_time,ipm)                 #绘制图形
+```
+[脚本]()
+[绘图]()
+
+## 总结
+
+PIScope的使用方法和matlab很相似，有matlab基础的可能感觉不陌生。
